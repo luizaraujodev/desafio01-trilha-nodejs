@@ -1,0 +1,126 @@
+[
+  {
+    "_id": "c4769971-cd60-4c5b-850b-1e73ba28449c",
+    "colId": "dd873d8b-2ffe-4799-bdc1-5a5edd946d5d",
+    "containerId": "",
+    "name": "Create",
+    "url": "{{baseUrl}}/users",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-26T14:22:56.090Z",
+    "modified": "2022-09-26T14:31:24.725Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Luiz Araújo\",\n  \"username\": \"luizaraujo\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2b1f35e2-57af-44da-8a18-6dbf0ae4eef6",
+    "colId": "c78add5f-7642-486d-ba74-79151a60dd26",
+    "containerId": "",
+    "name": "List",
+    "url": "{{baseUrl}}/todos",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-09-26T14:26:22.968Z",
+    "modified": "2022-09-26T14:27:00.628Z",
+    "headers": [
+      {
+        "name": "username",
+        "value": "{{accessKey}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8a3add3b-8306-49d4-833a-2965bd170bce",
+    "colId": "c78add5f-7642-486d-ba74-79151a60dd26",
+    "containerId": "",
+    "name": "Create Todo",
+    "url": "{{baseUrl}}/todos",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-09-26T14:37:57.407Z",
+    "modified": "2022-09-26T14:38:42.443Z",
+    "headers": [
+      {
+        "name": "username",
+        "value": "{{accessKey}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Teste de todo\",\n  \"deadline\" : \"2022-09-26\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c15dc6b1-8918-42d6-9116-bf099db851fc",
+    "colId": "c78add5f-7642-486d-ba74-79151a60dd26",
+    "containerId": "",
+    "name": "Update",
+    "url": "{{baseUrl}}/todos/74814628-9d0b-414d-8529-bcba5b657f77",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2022-09-26T14:41:22.173Z",
+    "modified": "2022-09-26T15:00:18.597Z",
+    "headers": [
+      {
+        "name": "username",
+        "value": "{{accessKey}}"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Teste alteracao\",\n  \"deadline\" : \"2022-09-27\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "57374cdd-7e4c-4897-9e2b-046d02a77369",
+    "colId": "c78add5f-7642-486d-ba74-79151a60dd26",
+    "containerId": "",
+    "name": "delete",
+    "url": "{{baseUrl}}/todos/3b52e969-64f0-4b8c-b8c6-70d16ad2f81e",
+    "method": "DELETE",
+    "sortNum": 50000,
+    "created": "2022-09-26T14:54:50.799Z",
+    "modified": "2022-09-26T14:55:12.936Z",
+    "headers": [
+      {
+        "name": "username",
+        "value": "{{accessKey}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8d09481c-82c8-4919-bb32-5ec5e996b817",
+    "colId": "c78add5f-7642-486d-ba74-79151a60dd26",
+    "containerId": "",
+    "name": "Update Copy",
+    "url": "{{baseUrl}}/todos/74814628-9d0b-414d-8529-bcba5b657f77/done",
+    "method": "PATCH",
+    "sortNum": 45000,
+    "created": "2022-09-26T14:59:53.129Z",
+    "modified": "2022-09-26T15:00:40.416Z",
+    "headers": [
+      {
+        "name": "username",
+        "value": "{{accessKey}}"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]
